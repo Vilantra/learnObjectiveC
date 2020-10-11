@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
-
+@property (strong, nonatomic) IBOutlet UITextField *usText;
+- (IBAction)convert:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UILabel *result;
 @end
 

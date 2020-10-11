@@ -18,6 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
-
+- (IBAction)convert:(UIButton *)sender {
+    
+    [self.result setText: [NSString stringWithFormat:@"Equivale a %.0f",[self.usText.text floatValue] * 794]];
+    self.result.hidden = NO;
+}
 @end
